@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>SR Automation Report</title>
+
+<script type="text/javascript" src="colorbox/jsapi.js"></script>
+<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Status', 'Count', 'Link'],        
+          ['Skipped', 0, './HtmlFiles/SkipReport.html'],  
+          ['Passed',  0, './HtmlFiles/PassReport.html'],
+          ['Failed', 1, './HtmlFiles/FailReport.html']          
+        ]);
+	
+         var view = new google.visualization.DataView(data);
+         view.setColumns([0, 2]);
+
+          var options = {
+           pieSliceBorderColor: 'transparent', legend: 'right', chartArea: { top: '70'},
+          backgroundColor: 'transparent', width: 580, height: 360, enableInteractivity: 'true',
+         slices: {0: {color: '#1F45FC', offset: 0.25}, 1: { color: '#4CC417', offset: 0.25}, 2: {color: '#FF0000', offset: 0.25}},
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));       
+        chart.draw(data, options);
+
+ var selecthandler = function(e){
+window.location = data.getValue(chart.getSelection()[0]['row'], 2 );
+}
+google.visualization.events.addListener(chart, 'select', selecthandler)
+
+var counter=0.25;
+var handler = setInterval(function(){
+counter = counter-0.01
+options = {
+           pieSliceBorderColor: 'transparent', legend: 'right', chartArea: { top: '70'},
+          backgroundColor: 'transparent', width: 580, height: 360, enableInteractivity: 'true',
+          slices: {0: {color: '#1F45FC', offset: counter}, 1: { color: '#4CC417', offset: counter}, 2: {color: '#FF0000', offset: counter}},
+         animation: {duration: 1000, easing: 'out', startup: 'true'}
+        };
+chart.draw(data, options);
+if(counter<0.02) clearInterval(handler);
+}, 50);
+
+    }
+</script>
+
+<script type="text/javascript" src="colorbox/chart.js"></script>
+<script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Module Name", "Pass", "Fail", "Skip"],
+        ["Infra", 0, 1, 0], 
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,	     
+                         type: "string",
+                         role: "annotation" },
+                       2, { calc: "stringify",
+                         sourceColumn: 2,
+                         type: "string",
+                         role: "annotation" }, 3, { calc: "stringify",
+                         sourceColumn: 3,
+                         type: "string",
+                         role: "annotation" }]);
+
+      var options = {title: "Module Wise Status", titleTextStyle: {fontSize: 12,}, bar: {groupWidth: '50%'},
+	chartArea: { top: '50', width: '85%', height:'70%'}, tooltip: {trigger: 'none'},
+	colors: ['#4CC417','#FF0000', '#1F45FC'], hAxis: {textStyle: {fontSize: 12,}},
+        	legend: { position: "none" }, animation: {duration: 800, easing: 'inAndOut', startup: 'true'}
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("barchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+
+</head>
+
+<body>
+<font face='Tahoma'size='2'>
+<table width="1000" border="0" align="center" cellpadding="10" cellspacing="2">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td  align="left" style="color:#933b81; font-weight:bold; font-family:'Times New Roman', Times, serif; font-size:40px;"><img src="Images/logo.jpg" width="100" height="40" border="0" /></td>
+          
+        </tr>
+		<tr>
+          <td  align="Center" style="color:#8b8878; font-weight:bold; font-family:'Times New Roman', Times, serif; font-size:25px;"><strong>SR Automation Report</strong></td>
+         
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td valign="top" background="Images/bg1.jpg" bgcolor="#E6F3FC">
+		<table width="975" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+			<td align="left" valign="top" style='color:#3090C7; font-size:14px;'>
+            <strong>Execution Date:</strong> <span style="color:#404040;">18-Apr-2022, 02:05 PM</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />  <strong>Execution Time:</strong> <span style="color:#404040;">00:01:39</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
+<strong>Browser Used:</strong> <span style="color:#404040;">Chrome</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
+<strong>Environment:</strong> <span style="color:#404040;">https://qa1.myhcl.com/SmartRecruit_CBT</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+            </td>
+
+			<td width="200" align="right" valign="top"><div style=" padding:10px; float:right; background-color:#fff; border:solid 2px #ccc;">
+              <table width="200" border="0" cellspacing="0" cellpadding="0" style="font-family:Arial, Helvetica, sans-serif; color:#666; font-size:12px;">
+                <tr>
+					 <td style="padding-top:5px;">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						  <tr>
+							<td width="230"><div style="float:left; margin-right:25px; color:#000000;"><strong>TC Scheduled : </strong></div></td>
+							<td width="69"><div style="float:left; color:#000000;"><strong>1</strong></div></td>
+						  </tr>
+						</table>
+					</td>
+                </tr>
+
+                 <tr>
+                  <td style="padding-top:5px;">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="230"><div style="float:left; margin-right:25px; color:#2B65EC;"><strong>TC Skipped : </strong></div></td>
+                        <td width="69"><div style="float:left; color:#2B65EC;"><strong>&nbsp;0</strong></div></td>
+                      </tr>
+                    </table>
+				</td>
+                </tr>
+
+				<tr>
+					 <td style="padding-top:5px;">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						  <tr>
+							<td width="230"><div style="float:left; margin-right:25px; color:#80b849;"><strong>TC Passed : </strong></div></td>
+							<td width="69"><div style="float:left; color:#80b849;"><strong>&nbsp;0</strong></div></td>
+						  </tr>
+						</table>
+					</td>
+                </tr>
+                <tr>
+                  <td style="padding-top:5px;">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="230"><div style="float:left; margin-right:25px; color:#d23039;"><strong>TC Failed : </strong></div></td>
+                        <td width="69"><div style="float:left; color:#d23039;"><strong>&nbsp;1</strong></div></td>
+                      </tr>
+                    </table>
+				</td>
+                </tr>
+              </table>
+            </div></td>
+        </tr>
+      </table></td>
+  </tr>
+
+<tr>
+<td>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0"><tr>
+			<td width="250" align="left" valign="top"><div style="padding:3px; float:left; background-color:#ffffff; border:solid 2px #ccc;">
+              <table width="250" border="0" cellspacing="0" cellpadding="0" style="font-family:Arial, Helvetica, sans-serif; color:#666; font-size:13px;">
+                <tr>
+					 <td style="padding-top:2px;">
+						<table width="100%" border="0" cellspacing="1" cellpadding="0">
+						<tr> <td align="left"> <div id="barchart_values" style="width: 400px; height: 340px;"></div> 
+						</table>
+					</td>
+                </tr>
+              </table>
+            </div></td>
+
+<td align="center" valign="top"> <div id="donutchart"></div></td>
+</tr>
+</table><tr><td width='1000' align='center' bgcolor='#A6AAAB' style='color:#FFFFFF;'> Copyright &copy; 2018 HCL Technologies Ltd. All Rights Reserved.</td></tr></table></body></html>

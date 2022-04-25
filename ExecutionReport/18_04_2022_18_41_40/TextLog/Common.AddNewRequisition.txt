@@ -1,0 +1,27 @@
+TimeStamp     Log Description
+=========     ===============
+
+18:42:10       Initiator creates Requisition
+18:42:13       Initiator Actions : control clicked successfully
+18:42:20       Create New Requisition : control clicked successfully
+18:43:15       Y/140218 : selected successfully in : Project
+18:43:20       Project Description : Object in read-only mode
+18:43:20       Initiator is Able to View Project Description 
+18:43:20       Exclusive : No such object exists on the page
+18:43:20       Client Interview : Object exists on the page
+18:43:33       New Resource Request--New : selected successfully in Menu control : Requisition Type
+18:43:33       Transfer To : No such object exists on the page
+18:43:33       Program Type For Fresher : No such object exists on the page
+18:43:33       SR Number Against Buffer : No such object exists on the page
+18:43:33       Name of Resource : No such object exists on the page
+18:43:33       Name of Resource : No such object exists on the page
+18:43:33       TP State : No such object exists on the page
+18:43:33       Account ID : Object exists on the page
+18:43:36       Google Inc (001U000000XY9vjIAD ) : set successfully in the field : Account ID
+18:43:38       Google enterprise support (OHCLP080283 ) : set successfully in the field : Opportunity ID
+18:43:38       BSERV Bulk Hiring : No such object exists on the page
+18:43:38       Skill : Object exists on the page
+18:43:54       javascript : entered successfully in : Skill
+18:46:17       Job Filter icon : No such object exists on the page
+18:46:20       analyst : set successfully in the field : Job Field
+18:50:12       Object reference not set to an instance of an object.

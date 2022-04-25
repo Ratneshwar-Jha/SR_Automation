@@ -1,0 +1,4 @@
+TimeStamp     Log Description
+=========     ===============
+
+18:50:12       Initiator Edit Updates a Requisition

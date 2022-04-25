@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B724259F-BDEA-49C0-8FE7-C072169D1341}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SR_Automation</RootNamespace>
+    <AssemblyName>SR_Automation</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>True</IsCodedUITest>
+    <TestProjectType>CodedUITest</TestProjectType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoItX3.Assembly">
+      <HintPath>packages\AutoItX3.Assembly.dll</HintPath>
+    </Reference>
+    <Reference Include="CrossBrowserZipUtility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\CrossBrowserZipUtility.exe</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExcelDataReader">
+      <HintPath>packages\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=1.3.0.733, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <HintPath>packages\FluentNHibernate.1.3.0.733\lib\FluentNHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>packages\NHibernate.3.3.2.4000\lib\Net35\NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Repositories, Version=0.1.15.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Repositories.0.1.15\lib\Repositories.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessComponent\Common\BC_BulkActions.cs" />
+    <Compile Include="BusinessComponent\Common\BC_ApproverActions.cs" />
+    <Compile Include="BusinessComponent\Common\BC_ConfiguratorActions.cs" />
+    <Compile Include="BusinessComponent\Common\BC_CreateRequistion.cs" />
+    <Compile Include="BusinessComponent\Common\BC_InitiatorActions.cs" />
+    <Compile Include="BusinessComponent\Common\BC_InOutApp.cs" />
+    <Compile Include="BusinessComponent\Common\BC_InterviewerActions.cs" />
+    <Compile Include="BusinessComponent\Common\BC_TPGActions.cs" />
+    <Compile Include="DriverScript.cs" />
+    <Compile Include="Library\ExcelFunction.cs" />
+    <Compile Include="Library\GenericFunction.cs" />
+    <Compile Include="Library\GlobalVariable.cs" />
+    <Compile Include="Library\ReportGenerator.cs" />
+    <Compile Include="Library\ToolWrapper.cs" />
+    <Compile Include="ObjectRepository\Common\OR_ApproverActions.cs" />
+    <Compile Include="ObjectRepository\Common\OR_BulkAction.cs" />
+    <Compile Include="ObjectRepository\Common\OR_Configurator.cs" />
+    <Compile Include="ObjectRepository\Common\OR_CreateRequisition.cs" />
+    <Compile Include="ObjectRepository\Common\OR_InitiatorActions.cs" />
+    <Compile Include="ObjectRepository\Common\OR_InOutApp.cs" />
+    <Compile Include="ObjectRepository\Common\OR_InterviewerActions.cs" />
+    <Compile Include="ObjectRepository\Common\OR_TPGActions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestCase\Common\AddNewRequisition.cs" />
+    <Compile Include="TestCase\Common\AssignToTPGExecutiveFinalSelect.cs" />
+    <Compile Include="TestCase\Common\AssignToTPGExecutiveReject.cs" />
+    <Compile Include="TestCase\Common\CloseRequisition.cs" />
+    <Compile Include="TestCase\Common\CopyRequisition.cs" />
+    <Compile Include="TestCase\Common\CR00019297-Configurator.cs" />
+    <Compile Include="TestCase\Common\CR00019647-InfraEdit.cs" />
+    <Compile Include="TestCase\Common\CR00019764-BservBulkHiring.cs" />
+    <Compile Include="TestCase\Common\CR00020307-Infra_SecondaryFields.cs" />
+    <Compile Include="TestCase\Common\CR00020324-Cybersecurity.cs" />
+    <Compile Include="TestCase\Common\CR00020375-Sales.cs" />
+    <Compile Include="TestCase\Common\CR00020590-SLSkillingProgram.cs" />
+    <Compile Include="TestCase\Common\CR00020626-Srilanka-Campus.cs" />
+    <Compile Include="TestCase\Common\CR00020634-SimplifySR-TSS.cs" />
+    <Compile Include="TestCase\Common\CR00020730-Apps_ObsoleteSkillValidation.cs" />
+    <Compile Include="TestCase\Common\CR00020760-SimplifyBuffer.cs" />
+    <Compile Include="TestCase\Common\CR00020876-Bserv-IBS-AppWF.cs" />
+    <Compile Include="TestCase\Common\CR00020907-TPOnboardingChangeApprover.cs" />
+    <Compile Include="TestCase\Common\CR00025509-ExcaliburDemandProbabilityERS.cs" />
+    <Compile Include="TestCase\Common\CR00023838_USNVRelatedSRAutomationRequest.cs" />
+    <Compile Include="TestCase\Common\CR00024735-HireInIndiaforSriLanka.cs" />
+    <Compile Include="TestCase\Common\CR00024905-BulkSRtransferandBSDchange.cs" />
+    <Compile Include="TestCase\Common\CR00024905-BulkSRTransferAndBulkBSDChange.cs" />
+    <Compile Include="TestCase\Common\CR00024906_DigitalBusinessRequirement.cs" />
+    <Compile Include="TestCase\Common\CR00025017_TechbeeNewZealand.cs" />
+    <Compile Include="TestCase\Common\CR00025197_ErsSReditoption.cs" />
+    <Compile Include="TestCase\Common\CR00025317-Option in SR to select  PAN INDIA as a location.cs" />
+    <Compile Include="TestCase\Common\CR00025065-C-DEX_role landscape refresh - HCL Software.cs" />
+    <Compile Include="TestCase\Common\CR00024923-InfraSOTDemandValidation.cs" />
+    <Compile Include="TestCase\Common\CR00021117-RestrictingSOTdemands.cs" />
+    <Compile Include="TestCase\Common\CR00021125-HDNewL0Changes.cs" />
+    <Compile Include="TestCase\Common\CR00021397-ChngNLogicForcefulFinal.cs" />
+    <Compile Include="TestCase\Common\CR00021507-D_ALOBchanges.cs" />
+    <Compile Include="TestCase\Common\CR00021550-H_DHiring.cs" />
+    <Compile Include="TestCase\Common\CR00021974-Apps-SI-Skill Bundle.cs" />
+    <Compile Include="TestCase\Common\CR00022033-H_D_Hiring.cs" />
+    <Compile Include="TestCase\Common\CR00022229-RehireTag.cs" />
+    <Compile Include="TestCase\Common\CR00022230-ShowValidBUDomainToInfra.cs" />
+    <Compile Include="TestCase\Common\CR00022231-ExcaliburDemandProbability.cs" />
+    <Compile Include="TestCase\Common\CR00022331-ITAPEDGEHiring.cs" />
+    <Compile Include="TestCase\Common\CR00022442-TransferofSRfromAppsToInfra.cs" />
+    <Compile Include="TestCase\Common\CR00022531-SAPPRACTICELOBSkill.cs" />
+    <Compile Include="TestCase\Common\CR00023050-FresherAutomationProcessVietnam.cs" />
+    <Compile Include="TestCase\Common\CR00023111_CyberSecurityJobFamily.cs" />
+    <Compile Include="TestCase\Common\CR00023190-SLSchoolGrads.cs" />
+    <Compile Include="TestCase\Common\CR00023436-ProficencyChange.cs" />
+    <Compile Include="TestCase\Common\CR00023540-RASserviceURLupdateAppModernization.cs" />
+    <Compile Include="TestCase\Common\CR00023545-TPRestriction.cs" />
+    <Compile Include="TestCase\Common\CR00023547-BatchFlagTDFTEConversion.cs" />
+    <Compile Include="TestCase\Common\CR00023706-FresherTypeForOffshore.cs" />
+    <Compile Include="TestCase\Common\CR00023926-ResourceAvailabilityDetachingProfileFromBlockStatus.cs" />
+    <Compile Include="TestCase\Common\CR00024428-InfraApproverWorkflow.cs" />
+    <Compile Include="TestCase\Common\CR00024439-TechbeeANZHiringandSystemAutomationAustralia.cs" />
+    <Compile Include="TestCase\Common\CR00025060_TPGConfigurator.cs" />
+    <Compile Include="TestCase\Common\CR00025318_InfraApproverLogic.cs" />
+    <Compile Include="TestCase\Common\DropVacancy.cs" />
+    <Compile Include="TestCase\Common\EditUpdateRequisition.cs" />
+    <Compile Include="TestCase\Common\InOutApp.cs" />
+    <Compile Include="TestCase\Common\AllApproverApproveReq.cs" />
+    <Compile Include="TestCase\Common\ApproverReferBackCloseReq.cs" />
+    <Compile Include="TestCase\Common\InterviewerBlockProfile.cs" />
+    <Compile Include="TestCase\Common\InterviewerRejectProfile.cs" />
+    <Compile Include="TestCase\Common\InterviewerRoleEnhancement%28CR00019330%29.cs" />
+    <Compile Include="TestCase\Common\InterviewerShortListAndFinalSelect.cs" />
+    <Compile Include="TestCase\Common\InterviewerUnBlockProfile.cs" />
+    <Compile Include="TestCase\Common\SrReferback.cs" />
+    <Compile Include="TestCase\Common\TPGFinalSelect.cs" />
+    <Compile Include="TestCase\Common\TPGForwardReq.cs" />
+    <Compile Include="TestCase\Common\TPGReferbackFinalSelect.cs" />
+    <Compile Include="TestCase\Common\TPGReferbackInitiatorClose.cs" />
+    <Compile Include="TestCase\Common\TPGReferbackReject.cs" />
+    <Compile Include="TestCase\Common\TPGReject.cs" />
+    <Compile Include="TestCase\Common\TransferDemand.cs" />
+    <Compile Include="TestCase\Common\YtoCReferBackTPG.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataPool\TextFile\" />
+    <Folder Include="ExecutionReport\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataPool\DataSheet\TestData.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Default.srprofile" />
+    <None Include="packages.config" />
+    
+    <None Include="runtests.cmd" />
+    <None Include="SR_Automation.nuspec" />
+    <None Include="TestSuite\TestSuite.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\Selenium.WebDriver.ChromeDriver.92.0.4515.107\driver\chromedriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' Or '$(VisualStudioVersion)' == '11.0') And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="UIAutomationTypes" />
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Selenium.WebDriver.MicrosoftWebDriver.10.0.17134\build\Selenium.WebDriver.MicrosoftWebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Selenium.WebDriver.MicrosoftWebDriver.10.0.17134\build\Selenium.WebDriver.MicrosoftWebDriver.targets'))" />
+    <Error Condition="!Exists('packages\AutoItX.Dotnet.3.3.14.5\build\AutoItX.Dotnet.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\AutoItX.Dotnet.3.3.14.5\build\AutoItX.Dotnet.targets'))" />
+    
+    <Error Condition="!Exists('packages\Selenium.Chrome.WebDriver.85.0.0\build\Selenium.Chrome.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Selenium.Chrome.WebDriver.85.0.0\build\Selenium.Chrome.WebDriver.targets'))" />
+    <Error Condition="!Exists('packages\Selenium.WebDriver.ChromeDriver.99.0.4844.5100\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Selenium.WebDriver.ChromeDriver.99.0.4844.5100\build\Selenium.WebDriver.ChromeDriver.targets'))" />
+  </Target>
+  <Import Project="packages\Selenium.WebDriver.MicrosoftWebDriver.10.0.17134\build\Selenium.WebDriver.MicrosoftWebDriver.targets" Condition="Exists('packages\Selenium.WebDriver.MicrosoftWebDriver.10.0.17134\build\Selenium.WebDriver.MicrosoftWebDriver.targets')" />
+  <Import Project="packages\AutoItX.Dotnet.3.3.14.5\build\AutoItX.Dotnet.targets" Condition="Exists('packages\AutoItX.Dotnet.3.3.14.5\build\AutoItX.Dotnet.targets')" />
+ 
+  
+  <Import Project="packages\Selenium.WebDriver.ChromeDriver.99.0.4844.5100\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('packages\Selenium.WebDriver.ChromeDriver.99.0.4844.5100\build\Selenium.WebDriver.ChromeDriver.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

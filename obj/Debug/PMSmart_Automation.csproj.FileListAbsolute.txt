@@ -1,0 +1,35 @@
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\PMSmart_Automation.exe.config
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\PMSmart_Automation.exe
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\PMSmart_Automation.pdb
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\EntityFramework.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\EntityFramework.SqlServer.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\FluentNHibernate.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\Iesi.Collections.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\Newtonsoft.Json.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\NHibernate.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\nunit.framework.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\Repositories.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\SpecRun.SpecFlowPlugin.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\TechTalk.SpecFlow.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\TechTalk.SpecRun.Common.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\TechTalk.SpecRun.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\WebDriver.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\WebDriver.Support.dll
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\EntityFramework.xml
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\EntityFramework.SqlServer.xml
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\FluentNHibernate.xml
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\Iesi.Collections.xml
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\Newtonsoft.Json.xml
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\NHibernate.xml
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\nunit.framework.xml
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\WebDriver.xml
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\bin\Debug\WebDriver.Support.xml
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\obj\Debug\PMSmart_Automation.csproj.ResolveComReference.cache
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\obj\Debug\PMSmart_Automation.exe
+C:\Amit Stuff\Amit_Workspace\PMSmart_Automation\obj\Debug\PMSmart_Automation.pdb
+C:\Amit\Amit Stuff\Amit Stuff\Amit_Workspace\SR_Automation\bin\Debug\PMSmart_Automation.exe.config
+C:\Amit\Amit Stuff\Amit Stuff\Amit_Workspace\SR_Automation\obj\Debug\PMSmart_Automation.csproj.ResolveComReference.cache
+C:\Amit\Amit Stuff\Amit Stuff\Amit_Workspace\SR_Automation\obj\Debug\PMSmart_Automation.exe
+C:\Amit\Amit Stuff\Amit Stuff\Amit_Workspace\SR_Automation\obj\Debug\PMSmart_Automation.pdb

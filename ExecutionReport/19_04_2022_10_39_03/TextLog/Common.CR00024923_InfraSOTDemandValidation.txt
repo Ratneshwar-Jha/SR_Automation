@@ -1,0 +1,18 @@
+TimeStamp     Log Description
+=========     ===============
+
+10:39:35       Initiator Creates Requisition 
+10:39:39       https://qa1.myhcl.com/SmartRecruit_CBT : url successfully open in browser
+10:39:41       51655045 : set successfully in the field : Username
+10:39:43       123 : set successfully in the field : QAPassword
+10:39:46       Login : control clicked successfully
+10:39:49       Initiator Actions : control clicked successfully
+10:39:58       Create New Requisition : control clicked successfully
+10:40:53       Others (6863) : selected successfully in : Project
+10:40:58       Project Description : Object in read-only mode
+10:40:58       Initiator is Able to View Project Description 
+10:40:58       Exclusive : No such object exists on the page
+10:41:00       --Select--
+  : selected successfully in dropdown control : Project L1
+10:41:03       no such element: Unable to locate element: {"method":"xpath","selector":"//button[@data-id='ddlProjectL4']/following::div[1]/ul[1]/li[@data-original-index='2']/a[1]/span[1]"}
+  (Session info: chrome=100.0.4896.88)

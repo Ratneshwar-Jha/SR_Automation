@@ -1,0 +1,7 @@
+TimeStamp     Log Description
+=========     ===============
+
+18:41:49       https://qa1.myhcl.com/SmartRecruit_CBT : url successfully open in browser
+18:41:51       51655045 : set successfully in the field : Username
+18:41:53       123 : set successfully in the field : QAPassword
+18:42:10       Login : control clicked successfully

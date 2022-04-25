@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>SR_Automation</id>
+        <version>1.0.0</version>
+        <authors>HCL</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>SR_Automation_CICD</description>
+    </metadata>
+    <files>
+		<file src="bin\Release\chromedriver.exe" target="lib/net451" />
+		<file src="bin\Release\msedgedriver.exe" target="lib/net451" />
+		<file src="bin\Release\AutoItX3.Assembly.dll" target="lib/net451" />
+		<file src="bin\Release\AutoItX3.dll" target="lib/net451" />
+		<file src="bin\Release\AutoItX3_x64.dll" target="lib/net451" />
+        <file src="bin\Release\EntityFramework.dll" target="lib/net451" />
+        <file src="bin\Release\Iesi.Collections.dll" target="lib/net451" />
+	    <file src="bin\Release\EntityFramework.SqlServer.dll" target="lib/net451" />
+        <file src="bin\Release\FluentNHibernate.dll" target="lib/net451" />
+        <file src="bin\Release\ExcelDataReader.dll" target="lib/net451" />
+	    <file src="bin\Release\NHibernate.dll" target="lib/net451" />
+        <file src="bin\Release\Repositories.dll" target="lib/net451" />
+        <file src="bin\Release\WebDriver.dll" target="lib/net451" />
+	    <file src="bin\Release\WebDriver.Support.dll" target="lib/net451" />
+		<file src="bin\Release\SR_Automation.exe.config" target="lib/net451" />
+	    <file src="bin\Release\DataPool\DataSheet\TestData.xls" target="lib/net451/DataPool/DataSheet" />
+		<file src="bin\Release\DataPool\ReportTemplate\" target="lib/net451/DataPool/ReportTemplate" />
+	    <file src="bin\Release\TestSuite\TestSuite.xls" target="lib/net451/TestSuite" />
+		<file src="bin\Release\packages\Selenium.WebDriver.ChromeDriver.99.0.4844.5100\driver\win32\chromedriver.exe" target="lib/net451/packages/Selenium.WebDriver.ChromeDriver.99.0.4844.5100/driver/win32" />
+		<!--<file src="bin\Release\packages\Selenium.WebDriver.MSEdgeDriver.98.0.1108.56\driver\win64\msedgedriver.exe" target="lib/net451/packages/Selenium.WebDriver.MSEdgeDriver.98.0.1108.56/driver/win64" />-->
+		<!--<file src="bin\Release\packages\Selenium.WebDriver.IEDriver.3.150.1.2\driver\IEDriverServer.exe" target="lib/net451/packages/Selenium.WebDriver.IEDriver.3.150.1.2/driver" />
+	    <file src="bin\Release\packages\Selenium.WebDriver.IEDriver.3.150.1.2\build\Selenium.WebDriver.IEDriver.targets" target="lib/net451/packages/Selenium.WebDriver.IEDriver.3.150.1.2/build" />-->
+    </files>
+</package>
